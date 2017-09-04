@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'mechanize', git: 'git://github.com/sparklemotion/mechanize.git'
 gem 'pg', '~> 0.18'
 gem 'annotate'
 gem 'rails_12factor', group: :production
