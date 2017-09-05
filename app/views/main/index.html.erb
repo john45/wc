@@ -1,3 +1,8 @@
+<%= form_tag('/main/search', remote: true) do %>
+  <%= label_tag(:city, 'search for cities') %>
+  <%= text_field_tag(:city) %>
+  <%= submit_tag('search') %>
+<% end %>
 
 user id is: <%= @user %>
 <br>

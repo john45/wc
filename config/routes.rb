@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   scope '/admin' do
     resources :recepts
   end
+  post 'main/search'
 end

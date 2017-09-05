@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170905170833) do
+ActiveRecord::Schema.define(version: 20170905210811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20170905170833) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "id_or_name"
+    t.string "find_field_name"
   end
 
   create_table "user_forecasts", force: :cascade do |t|
