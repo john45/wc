@@ -1,0 +1,23 @@
+Form
+
+<%= form_for @recept do |f| %>
+  <ul>
+    <li><%= f.label :link %></li>
+    <li><%= f.text_field :link %></li>
+    <li><%= f.label :id_or_name %></li>
+    <li><%= f.select(:id_or_name, [%w(id id),%w(name name), %w(action action)]) %></li>
+    <li><%= f.label :id_name_form %></li>
+    <li><%= f.text_field :id_name_form %></li>
+    <li><%= f.label :current %></li>
+    <li><%= f.text_field :current %></li>
+    <li><%= f.label :min %></li>
+    <li><%= f.text_field :min %></li>
+    <li><%= f.label :max %></li>
+    <li><%= f.text_field :max %></li>
+    <li><%= f.label :probability %></li>
+    <li><%= f.text_field :probability %></li>
+    <br>
+    <li><%= f.submit %></li>
+  </ul>
+
+<% end %>

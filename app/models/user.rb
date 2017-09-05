@@ -10,7 +10,6 @@
 
 class User < ApplicationRecord
   has_many :cities
-  has_many :user_forecasts
 
   before_create do
     self.name = 'Noname'
