@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'annotate'
+gem 'byebug'
 gem 'mechanize', git: 'git://github.com/sparklemotion/mechanize.git'
 gem 'pg', '~> 0.18'
 gem 'rails_12factor', group: :production

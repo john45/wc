@@ -11,23 +11,20 @@ class ReceptsController < ApplicationController
     @recept = Recept.new
   end
 
-  def edit
-  end
+  def edit; end
 
-  def destroy
-  end
-
+  def destroy; end
 
   private
 
-
   def incom_recept
     params.require(:recept).permit(:link,
-                            :id_or_name,
-                            :id_name_form,
-                            :current,
-                            :min,
-                            :max,
-                            :probability)
+                                   :form_param,
+                                   :id_or_name,
+                                   :current,
+                                   :min,
+                                   :max,
+                                   :probability,
+                                   :name_input_field)
   end
 end

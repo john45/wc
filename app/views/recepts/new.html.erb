@@ -4,10 +4,12 @@ Form
   <ul>
     <li><%= f.label :link %></li>
     <li><%= f.text_field :link %></li>
+    <li><%= f.label :form_param %></li>
+    <li><%= f.select(:form_param, [%w(id id),%w(name name), %w(action action)]) %></li>
     <li><%= f.label :id_or_name %></li>
-    <li><%= f.select(:id_or_name, [%w(id id),%w(name name), %w(action action)]) %></li>
-    <li><%= f.label :id_name_form %></li>
-    <li><%= f.text_field :id_name_form %></li>
+    <li><%= f.text_field :id_or_name %></li>
+    <li><%= f.label :name_input_field %></li>
+    <li><%= f.text_field :name_input_field %></li>
     <li><%= f.label :current %></li>
     <li><%= f.text_field :current %></li>
     <li><%= f.label :min %></li>
@@ -21,3 +23,5 @@ Form
   </ul>
 
 <% end %>
+
+
